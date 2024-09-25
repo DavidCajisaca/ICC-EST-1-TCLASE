@@ -1,3 +1,5 @@
+
+
 public class App {
     public static void main(String[] args) throws Exception {
         /*
@@ -28,7 +30,10 @@ public class App {
          * realizar operaciones básicas de manera creativa en programación.
          */
         int resultado = dataStructuresPrep.subtractAlgorithm(15, 5);
-
+        int rmulti=dataStructuresPrep.multiplyAlgorithm(6,9);
+        int rdivi=dataStructuresPrep.divideWAlgorithm(10,2);
+        boolean rperfe=dataStructuresPrep.isPerfectNumber(6);
+        int rfactorial=dataStructuresPrep.getFactorial(10);
         /*
          * Imprimir el resultado de la operación.
          * 
@@ -44,6 +49,10 @@ public class App {
          * parte de mensajes de salida o en lógicas de decisión más complejas.
          */
         System.out.println("El resultado de subtractAlgorithm  es: " + resultado);
-
+        System.out.println("El resultado de la multiplicacion es : "+rmulti);
+        System.out.println("El resultado es :"+rdivi);
+        System.out.println("El numero es perfecto: "+ rperfe);
+        System.out.println("EL factorial es : "+ rfactorial);
+// 
     }
 }

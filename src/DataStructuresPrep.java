@@ -1,4 +1,6 @@
 
+
+
 /**
  * La clase DataStructuresPrep está diseñada para reforzar conceptos
  * fundamentales de programación. A través de una serie
@@ -25,8 +27,14 @@ public class DataStructuresPrep {
      * @return El resultado de restar b a a.
      *         Ejemplo: subtractAlgorithm(5, 3) retorna 2.
      */
+    
     public int subtractAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int count=0;
+        while (a>(b+count)) {
+         count++;   
+
+        }
+        return count;
     }
 
     /**
@@ -38,8 +46,11 @@ public class DataStructuresPrep {
      *         Ejemplo: multiplyAlgorithm(5, 3) retorna 15.
      */
     public int multiplyAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
+        int count=0;
+        for(int i=0;i<b;i++){
+            count=count+a;
+        }
+        return count;
     }
 
     /**
@@ -51,8 +62,16 @@ public class DataStructuresPrep {
      *         Ejemplo: divideWAlgorithm(10, 2) retorna 5.
      */
     public int divideWAlgorithm(int dividend, int divisor) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
+        int count = 0;
+        int residuo = dividend;
+    
+        // Se repite la resta del divisor al residuo hasta que ya no pueda restarse más
+        while (residuo >= divisor) {
+            residuo -= divisor; 
+            count++;            
+        }
+    
+        return count; // Devuelve el cociente de la división
     }
 
     /**
@@ -64,7 +83,14 @@ public class DataStructuresPrep {
      *         Ejemplo: isPerfectNumber(28) retorna true.
      */
     public boolean isPerfectNumber(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int sum=0;
+        for (int i = 1; i < number; i++) {
+            if(number % i==0){
+                sum=sum+i;
+            }
+     
+        }
+        return sum==number;
     }
 
     /**
@@ -75,7 +101,16 @@ public class DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int numero=0;
+        if (numero==0) {
+            return 1;
+        }
+        int factorial=1;
+        for (int i = 1; i <= numero; i++) {
+            factorial *=i;
+
+        }
+        return  factorial;
     }
 
     /**
